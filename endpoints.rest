@@ -1,0 +1,23 @@
+
+### Variables
+@port = 3000
+
+
+### Get todos
+
+GET http://localhost:{{port}}/api/todos
+
+### Create a todo
+
+POST http://localhost:{{port}}/api/todos
+Content-Type: application/json
+
+{
+  "item": "Finish the Assignment"
+}
+
+### Toggle completed status of a todo
+
+PUT http://localhost:{{port}}/api/todos/6615e60c3738ae3e71d40a46
+
+
